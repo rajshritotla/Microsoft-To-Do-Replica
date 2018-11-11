@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>To-DO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.6.2.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <link rel="stylesheet" href="devleoperStyle.css">
+        
+        <script src="functioning.js"></script>
+    </head>
+    <body>
+        <div class="main">
+
+            <!--Title Bar-->
+            <div class="container_first">
+                <!--Logo-->
+                <div class="item_first fw25">
+                    <h4 id="title_to_do">TO-DO</h4>
+                </div>
+                <div class="item_first fw35">
+                    <input type="text" id="searchbar" placeholder="Search.." class="zero_m_p">
+                    <button id="searchbutton" onclick="searchTask();" class="zero_m_p"><i class="material-icons">
+                            search
+                            </i></button>
+                </div>
+                <div class="item_first fw25" id="setting_div">
+                        <i class="material-icons">settings</i> &nbsp;&nbsp;
+                    <i class="material-icons">person</i>
+                </div>
+            </div>
+            
+            <!--Data Area-->
+            <div class="container_second zero_m_p">
+                
+                <!--first col-->
+                <div class="container_second_left_col zero_m_p">
+                    <br><br>
+                    <div id="all_tasks" onclick="allTasks();"><p><label style="font-size: 150%">&#9977;</label> &nbsp;&nbsp; All</p></div>
+                    <div id="today_tasks" onclick="today();"><p><label style="font-size: 150%">&#9758;</label> &nbsp;&nbsp; Today</p></div>
+                    <div id="planned_tasks" onclick="pending();"><p><label style="font-size: 150%">&#9872;</label> &nbsp;&nbsp; Pending</p></div>
+                    <div id="completed_tasks" onclick="completed();"><p></p><label style="font-size: 150%">&#9745;</label> &nbsp;&nbsp; Completed</p></div>
+                </div>
+                
+                <!--second col-->
+                <div class="container_second_center_col zero_m_p" id="show_tasks">
+                
+                <input type="text" id="inputtasks"  value="+ Add new task                 [Click tasks to mark done undone]" readonly="readonly"  onclick="addtasks()">
+                </div>
+                
+                
+                
+                <!--third col-->
+                <div class="container_second_right_col zero_m_p"> 
+                        
+                        <div id="date_message">Date of Completion</div>
+                        <div id="task_date">
+                            <input type="number" id="task_id" placeholder="Task No" size=2 style="align-self: center"> <br><br>
+                            <input type="number" size="2" min="1" max="12" id="month" placeholder="MM" required>
+                            <input type="number" size="2" min="1" max="31" id="date" placeholder="DD" required>
+                            <input type="number" size="4" min="0000" max="2018" id="year" placeholder="YYYY" required>
+                            
+                        </div>
+                        <button id="date_button" onclick="addDate(parseInt(document.getElementById('task_id').value));">Add to Task</button>    
+                    
+                
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

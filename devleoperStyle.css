@@ -1,0 +1,183 @@
+body{
+    background-color: rgba(231, 231, 231, 0.651);
+    font-family: 'Nunito', sans-serif;
+    margin: 0%;;
+    padding: 0%;
+    font-size: 100%;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.container_first {
+    background-color: royalblue;
+    height: 7vh;
+    color: white;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-basis: 100vw;
+    align-items: stretch;
+    
+}
+
+.container_second{
+    display: flex;
+    
+    flex-basis: 100vw;
+    height: 100%;
+    justify-content: center;
+    
+
+}
+
+.container_second_left_col{
+    display: inline-flex;
+    flex-basis: 20vw;
+    align-self:auto;
+    order: 1;
+    flex-direction: column;
+    
+}
+
+
+.container_second_center_col{
+    background-color: white;
+    display: inline-flex;
+    flex-basis: 60vw;
+    align-self: auto;
+    order: 2;
+    flex-direction: column;
+    
+}
+
+.container_second_right_col{
+    display: inline-flex;
+    flex-basis: 20vw;
+    float: right;
+    align-self: auto;
+    order :3;
+    flex-direction: column;
+    
+}
+
+.item_first{
+    display: inline-flex;
+    align-self: center;
+    
+}
+
+.zero_m_p{
+    margin: 0%;;
+    padding: 0%;
+}
+
+#title_to_do{
+    margin-top: 1.5vw;
+}            
+
+#searchbar,#searchbutton{
+    height : 5vh;
+    margin-top: 1vh;
+    display: inline-flex;
+    align-self: auto;
+
+}
+
+.fw25{
+    flex-basis: 25vw;
+}
+
+.fw35{
+    flex-basis : 35vw;
+}
+
+#searchbar,#searchbutton{
+    height : 6vh;
+    margin:auto;
+    display: inline-flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+#searchbar{
+    flex-basis: 80%; 
+    padding-left: 1vw;  
+}
+
+#searchbutton{
+    flex-basis: 20%;
+    background-color:rgba(229, 236, 253, 0.952);
+    border : none;
+    width : 50%;
+}
+
+#setting_div{
+    justify-content: flex-end;
+}
+
+#all_tasks,#today_tasks,#planned_tasks,#completed_tasks{
+    padding-left: 2vw;
+    margin-bottom: -3.5vh;
+    width : inherit;
+    height: max-content;
+    font-size: larger;
+}            
+
+#date_message,#task_date{
+    margin-top:1.5vw;
+    margin-left: 2vw;
+    
+}
+
+#task_date{
+    width : inherit;
+    height: max-content;
+}
+
+#date_message{
+    font-size: larger;
+    font-family: 'Nunito', sans-serif;
+    width : inherit;
+    height: max-content;
+
+}
+
+#date,#month,#year,#task_id{
+    border-style: inset;
+    
+}
+
+#date,#month,#year,#date_button,#task_id{
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+    border-color: rgba(0, 0, 0, 0.801);
+    padding: 1%;
+    border-radius: 6%;
+}
+
+#date_button{
+    width: 60%;
+    align-self: center;
+    margin-top: 1.5vw;
+    align-self: flex-start;
+    margin-left: 2vw;
+    background-color:rgba(17, 63, 199, 0.562);
+    
+}
+div[class="container_second_center_col zero_m_p"]>input,#inputtasks{
+    margin: 0.8%;;
+    padding: 1vw;
+    height: max-content;
+    border: 0px;;
+    border-bottom: 0.2vh solid;
+    border-color: rgba(169, 169, 169, 0.767);
+    font-family: 'Handlee', cursive;
+    font-size: large;
+}
+
+#inputtasks:hover{
+    background-color:rgba(17, 63, 199, 0.562);
+}
