@@ -9,3 +9,6 @@ HTML, CSS, JS
 
 # Scope
 Currently it got only front-end completed but if integrated with database using server side scripting languages it could be fully functional application.
+
+# OUTPUT
+Click on output image in the repository.
